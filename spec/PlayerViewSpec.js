@@ -28,7 +28,7 @@ describe('PlayerView', function() {
   });
 
   describe('Song transitions', function() {
-    xit('dequeues a song when finished playing & plays the next song', function(){
+    it('dequeues a song when finished playing & plays the next song', function(){
       library.at(0).play();
       var originalSong = appView.playerView.model;
       appView.model.get('songQueue').add(library.at(1));
