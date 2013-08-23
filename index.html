@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+        <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   </head>
   <body>
+
     <script src="lib/jquery.js"></script>
     <script src="lib/underscore.js"></script>
     <script src="lib/backbone.js"></script>
@@ -20,8 +23,8 @@
     <script src="src/SongQueueView.js"></script>
     <script src="src/SongQueueEntryView.js"></script>
     <script src="src/AppView.js"></script>
-
     <script>
+
       $(function(){
         // set up model objects
         var library = new Songs(songData);

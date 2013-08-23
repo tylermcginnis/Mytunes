@@ -8,11 +8,15 @@ var AppView = Backbone.View.extend({
     }, this);
   },
 
+  id : "container",
+  header: "<div id='header'> MyTunes </div>",
+
   render: function(){
     return this.$el.html([
+      this.header,
       this.playerView.$el,
       new LibraryView({collection: this.model.get('library')}).render(),
-      new SongQueueView({collection: this.model.get('library')}).render()
+      new SongQueueView({collection: this.model.get('songQueue')}).render()
     ]);
   }
 

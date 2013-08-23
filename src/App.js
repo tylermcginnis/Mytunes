@@ -1,4 +1,5 @@
 var App = Backbone.Model.extend({
+  //Place that "Bridges the gap"
 
   initialize: function(params){
     this.set('currentSong', new Song());
