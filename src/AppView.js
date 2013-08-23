@@ -10,13 +10,15 @@ var AppView = Backbone.View.extend({
 
   id : "container",
   header: "<div id='header'> MyTunes </div>",
+  footer: "<div id='footer'> *Click on a song to add it to the Queue </div>",
 
   render: function(){
     return this.$el.html([
       this.header,
       this.playerView.$el,
       new LibraryView({collection: this.model.get('library')}).render(),
-      new SongQueueView({collection: this.model.get('songQueue')}).render()
+      new SongQueueView({collection: this.model.get('songQueue')}).render(),
+      this.footer
     ]);
   }
 

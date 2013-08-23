@@ -5,7 +5,7 @@ body{
 }
 
 #container{
-  width: 600px; 
+  width: 700px; 
   margin: 0px auto;
   background: white;
   opacity:0.9;
@@ -26,8 +26,12 @@ body{
 }
 
 audio {
-  width: 600px;
+  width: 700px;
   margin-bottom: 15px;
+}
+
+#footer{
+  float: left;
 }
 
 #libary {
@@ -51,6 +55,10 @@ audio {
 #songAndArtist {
   display: block;
   overflow: hidden;
+}
+
+#count {
+  float: right;
 }
 
 #artist{

@@ -4,6 +4,7 @@ var SongQueueView = Backbone.View.extend({
      var that = this;    
      this.collection.on("add", function(){
        that.render();
+       $("#footer").hide();
      });
 
      this.collection.on("remove", function(){
